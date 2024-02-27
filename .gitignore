@@ -1,0 +1,7 @@
+DOCUMENTS_ALGO/
+background.json
+db.sqlite3
+env/
+__pycache__/
+testing/
+

@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  backend:
+    build:
+      context: ./mainfolder
+    command: gunicorn PROJECT.wsgi --bind 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - staticc:/django/static  # Mount the static files directory
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:8080
+    volumes:
+      - ./nginx/nginx-setup.conf:/etc/nginx/conf.d/default.conf:ro
+      - staticc:/var/www/staticfiles  # Mount the static files directory
+    depends_on:
+      - backend
+
+volumes:
+  staticc:

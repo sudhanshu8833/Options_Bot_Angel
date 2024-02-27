@@ -1,0 +1,76 @@
+angel broking
+	client id - B400150
+	password  - Pankaj@278
+	mobile - 9938386995
+	email - nirku84@gmail.com
+
+smartapi - 
+		email - nirku84@gmail.com
+		password - Pankaj@278
+		mobile - 9145814438
+		pin - 7389
+
+angel token - E6A6M7TCCH2FMY5U3A23FUMXKU
+Api key - cOuAdu1P
+
+AWS account -
+	email - Bablikumari7171@gmail.com
+	password - Pankaj@278
+
+superuser login- 
+	username - sudhanshu
+	password - 123
+
+
+#Server
+ip - 165.232.187.64
+login - ssh root@165.232.187.64
+pass - 246Madhya
+copy - rsync -av --exclude='env/' --exclude='git/' --exclude='db.sqlite3' --exclude='log/' /Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT65_options/* root@165.232.187.64:/root/PROJECT/
+
+
+
+
+# STRATEGY
+
+1. SELL AT spot price P/C both
+2. add the receieved premium, and round off to 100
+3. SPOT + receieved premium CE BUY + ADDN, SPOT  - receieved premium PE BUY - ADDN
+4. position taken at 9,20 -> sell at 3,20
+
+
+{
+    "angel_api_keys":"",
+    "angel_client_id":"",
+    "angel_pin":"",
+    "angel_token":"",
+    "lots":,
+	"weekly_expiry":"NIFTY06MAR24",
+	"monthly_expiry":"NIFTY03APR24",
+	"symbol":"NIFTY",
+    "time_in":"9:20",
+    "time_end":"3:20",
+    "addition":"200",
+    "status":True | False,
+    "live": True | False,
+    "stoploss":"",
+    "takeprofit":"",
+	"check_tpsl":True | False
+}
+
+
+{
+    "symbol":"",
+	"token":"",
+    "status": OPEN | CLOSED,
+    "type": LONG | SHORT,
+    "time_start":"",
+    "time_end":"",
+    "quantity":"",
+    "pnl":"",
+    "current_price":"",
+    "price_in":"",
+    "price_out":"",
+    "stoploss":"",
+    "take_profit":""
+}
