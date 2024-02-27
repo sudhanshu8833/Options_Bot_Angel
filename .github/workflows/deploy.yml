@@ -1,0 +1,26 @@
+name: Deploy to server
+
+on:
+  push:
+    branches:
+      - master  # replace with your branch name if it's not 'master'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Deploy to server
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SERVER_IP }}
+        username: ${{ secrets.SERVER_USERNAME }}
+        key: ${{ secrets.SERVER_SSH_KEY }}
+        script: |
+          cd /root/PROJECT
+          git pull
+          docker-compose down
+          docker-compose up --build -d
