@@ -1,3 +1,7 @@
+web login -
+	username - B400150
+	password - Pankaj@278
+
 angel broking
 	client id - B400150
 	password  - Pankaj@278
