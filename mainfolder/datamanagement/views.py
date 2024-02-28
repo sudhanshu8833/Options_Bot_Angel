@@ -39,7 +39,6 @@ current_candles=database['candles']
 def login_page(request):
     return render(request, "login.html")
 
-
 def handleLogin(request):
 
     if request.user.is_authenticated:
