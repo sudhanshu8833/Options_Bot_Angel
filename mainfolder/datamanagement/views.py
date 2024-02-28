@@ -40,7 +40,7 @@ def login_page(request):
     return render(request, "login.html")
 
 def handleLogin(request):
-
+# see
     if request.user.is_authenticated:
         return redirect('/start_strategy')
     if request.method == "POST":
