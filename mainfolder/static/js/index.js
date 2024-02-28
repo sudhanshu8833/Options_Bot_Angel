@@ -1,6 +1,6 @@
 
 function updateTable() {
-    console.log(2000)
+    console.log(10)
     $.ajax({
         url: '/rest_update/',  // Replace with the actual URL of your Django view
         type: 'GET',
