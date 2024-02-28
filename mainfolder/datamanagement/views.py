@@ -37,7 +37,8 @@ current_candles=database['candles']
 
 
 def login_page(request):
-    return render(request, "login.html")
+    # return render(request, "login.html")
+    return JsonResponse({"h":"kyu bhia pagal hai kya"})
 
 def handleLogin(request):
 # see
