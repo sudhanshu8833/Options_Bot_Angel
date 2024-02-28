@@ -37,8 +37,8 @@ current_candles=database['candles']
 
 
 def login_page(request):
-    # return render(request, "login.html")
-    return JsonResponse({"Hell":"Hell"})
+    return render(request, "login.html")
+
 
 def handleLogin(request):
 
