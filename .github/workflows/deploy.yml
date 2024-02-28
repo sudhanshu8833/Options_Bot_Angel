@@ -15,14 +15,13 @@ jobs:
 
     - name: Deploy to server
       uses: appleboy/ssh-action@master
-      env:
-        SERVER_USERNAME: ${{ secrets.SERVER_USERNAME }}
+
       with:
         host: ${{ secrets.SERVER_IP }}
         username: ${{ secrets.SERVER_USERNAME }}
         key: ${{ secrets.SERVER_SSH_KEY }}
         script: |
-          cd /${SERVER_USERNAME}/PROJECT
+          cd /root/PROJECT
           git pull
           docker-compose down
           docker-compose up --build -d
