@@ -24,13 +24,13 @@ AWS account -
 superuser login- 
 	username - sudhanshu
 	password - 123
-
+# CHage
 
 #Server
 ip - 165.232.187.64
 login - ssh root@165.232.187.64
 pass - 246Madhya
-copy - rsync -av --exclude='env/' --exclude='git/' --exclude='db.sqlite3' --exclude='log/' /Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT65_options/* root@165.232.187.64:/root/PROJECT/
+copy - rsync -av /Users/sid/Desktop/algo-trading/PROFESSIONAL/PROJECT65_options/ root@165.232.187.64:/root/PROJECT/
 
 
 
