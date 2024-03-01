@@ -4,7 +4,14 @@ services:
   backend:
     build:
       context: ./mainfolder
-    command: gunicorn PROJECT.wsgi --bind 0.0.0.0:8000
+    command: >
+      bash -c "
+              apt-get update &&
+              apt-get install -y cron &&
+              python manage.py crontab add &&
+              python manage.py crontab add &&
+              python manage.py collectstatic --no-input &&
+              gunicorn PROJECT.wsgi --bind 0.0.0.0:8000"
     ports:
       - "8000:8000"
     volumes:

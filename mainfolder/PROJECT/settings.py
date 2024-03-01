@@ -90,9 +90,8 @@ DATABASES = {
 
 # my scheduled job
 CRONJOBS = [
-    ('*/1 * * * *', 'datamanagement.cron.my_scheduled_job')
+    ('* * * * *', 'datamanagement.cron.my_scheduled_job', '>> ' + os.path.join(BASE_DIR,'log/debug.log' + ' 2>&1 '))
 ]
-
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 

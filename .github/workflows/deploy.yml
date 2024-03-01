@@ -22,6 +22,8 @@ jobs:
         key: ${{ secrets.SERVER_SSH_KEY }}
         script: |
           cd /root/PROJECT
+          chown -R root:root /root/PROJECT
+          chmod -R 700 /root/PROJECT
           git pull
           docker-compose down
           docker-compose up --build -d
