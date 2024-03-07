@@ -7,7 +7,6 @@ It is mentioned that the strategy has been updated according to the new API chan
 
 >This Single Dashboard can be used for all your trading bots at once, just keep adding pages for each bot, and try to have only single page for present positions and order history
 
-![Alt text](screenshots/login.png)
 
 
 ## Procedure To install this on your PC
