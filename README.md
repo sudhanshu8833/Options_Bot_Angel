@@ -7,7 +7,7 @@ It is mentioned that the strategy has been updated according to the new API chan
 
 >This Single Dashboard can be used for all your trading bots at once, just keep adding pages for each bot, and try to have only single page for present positions and order history
 
-![Alt text](https://github.com/sudhanshu8833/Options-Trading-Bot-Angel-Broking-/blob/master/screenshots/login.png)
+![Alt text](https://github.com/sudhanshu8833/Options_Bot_Angel.git/blob/master/screenshots/login.png)
 
 
 ## Procedure To install this on your PC
@@ -42,7 +42,7 @@ python3 manage.py runserver
 
 
 1. **Settings page (main page)**
-   ![Alt text](https://github.com/sudhanshu8833/Options-Trading-Bot-Angel-Broking-/blob/master/screenshots/dashboard.png)
+   ![Alt text](https://github.com/sudhanshu8833/Options_Bot_Angel.git/blob/master/screenshots/dashboard.png)
    - This should be accessible at `http://127.0.0.1:8000/start_strategy/` if you are using local host
    - Angel Api keys, client id, password and token are provided by Angel/SMARTapi Itself.
    - You will have to keep **Weekly expriy / monthly expiry** updated for it to run logically.
